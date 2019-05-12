@@ -13,8 +13,7 @@ export function FocusVisiblePolyfillMixin(SuperClass) {
     // subsequent invokcations:
     if (
       instance.shadowRoot == null ||
-      instance.hasAttribute('data-js-focus-visible') ||
-      (self.ShadyCSS != null && self.ShadyCSS.nativeShadow)
+      instance.hasAttribute('data-js-focus-visible')
     ) {
       return;
     }
